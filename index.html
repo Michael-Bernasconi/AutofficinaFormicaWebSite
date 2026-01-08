@@ -31,49 +31,50 @@
     <main>
       <!-- Hero immagine -->
       <section
-        class="hero reveal"
+        class="hero-home reveal"
         style="
           background-image: linear-gradient(
               rgba(0, 0, 0, 0.5),
               rgba(0, 0, 0, 0.8)
             ),
-            url(img/wallpaper.jpeg);
+            url('img/wallpaper.jpeg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 60vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          flex-direction: column;
         "
       >
-        <!-- Scritta sopra l'immagine -->
-        <h1
-          style="
-            color: var(--primary);
-            font-size: 3rem;
-            font-weight: 400;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-          "
-        >
-          Autofficina Formica
-        </h1>
-        <!-- Due righe di introduzione in bianco -->
-        <p
-          style="
-            color: #ffffff;
-            font-size: 1.2rem;
-            position: absolute;
-            top: 65%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            max-width: 700px;
-            line-height: 1.5;
-          "
-        >
-          Passione e professionalità al servizio del tuo veicolo.<br />
-          Riparazioni, manutenzione e performance, tutto in un unico posto.
-        </p>
+        <div class="hero-content-home">
+          <h1
+            style="
+              color: var(--primary);
+              font-size: 3rem;
+              font-weight: 900;
+              text-transform: uppercase;
+              margin-bottom: 10px;
+            "
+          >
+            AUTOFFICINA FORMICA
+          </h1>
+          <p
+            style="
+              color: #ffffff;
+              font-weight: bold;
+              font-size: 1.2rem;
+              max-width: 700px;
+              line-height: 1.5;
+            "
+          >
+            Passione e professionalità al servizio del tuo veicolo.<br />
+            Riparazioni, manutenzione e performance, tutto in un unico posto.
+          </p>
+        </div>
       </section>
-
       <!-- Descrizione sotto l'immagine -->
       <div class="info-section-full storia-centrata reveal">
         <p>

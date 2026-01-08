@@ -24,7 +24,10 @@
         text-decoration: none;
         transition: 0.3s;
       }
-      a:hover { text-decoration: underline; }
+
+      a:hover {
+        text-decoration: underline;
+      }
 
       header {
         padding: 20px;
@@ -33,7 +36,10 @@
         position: relative;
       }
 
-      .logo { width: 200px; margin-bottom: 15px; }
+      .logo {
+        width: 200px;
+        margin-bottom: 15px;
+      }
 
       .menu-toggle {
         position: absolute;
@@ -42,6 +48,7 @@
         cursor: pointer;
         z-index: 1001;
       }
+
       .menu-toggle span {
         display: block;
         width: 35px;
@@ -64,8 +71,15 @@
         flex-direction: column;
         transition: 0.4s;
       }
-      .nav-menu.active { right: 0; }
-      .nav-menu a { margin-bottom: 20px; font-size: 1.3rem; }
+
+      .nav-menu.active {
+        right: 0;
+      }
+
+      .nav-menu a {
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+      }
 
       /* HERO */
       .hero-frmracing {
@@ -78,13 +92,13 @@
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.8)
           ),
-          url("img/chisiamo.jpg"); /* percorso corretto */
+          url("img/chisiamo.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
       }
 
-      .hero-frmracing h2 {
+      .hero-frmracing h1 {
         color: #fff;
         font-size: 3rem;
         font-weight: 900;
@@ -99,20 +113,85 @@
         text-transform: uppercase;
       }
 
-      .descrizione, .prodotti-home, .prodotto-card, .contatti { 
-        max-width: 1100px; 
-        margin: 0 auto; 
-        padding: 0 20px; 
+      .descrizione,
+      .sezione-prodotti,
+      .contatti {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 0 20px;
       }
 
-      .prodotti-home { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; margin-bottom: 60px; }
-      .prodotto-card { background: #1c1c1c; border-radius: 15px; overflow: hidden; width: 100%; max-width: 500px; transition: transform 0.3s; }
-      .prodotto-card img { width: 100%; object-fit: cover; }
-      .prodotto-card:hover { transform: translateY(-5px); }
-      .prodotto-descrizione h3 { color: #f1c40f; margin-bottom: 15px; }
-      footer { text-align: center; padding: 40px 20px; border-top: 3px solid #f1c40f; }
+      /* Titolo con barra gialla laterale come da immagine */
+      .sezione-titolo {
+        padding-left: 15px;
+        margin-bottom: 30px;
+      }
+
+      .sezione-titolo h2 {
+        font-size: 2.2rem;
+        margin: 0;
+        text-transform: none;
+      }
+
+      .prodotti-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      .prodotto-card {
+        background: #1c1c1c;
+        border-radius: 15px;
+        overflow: hidden;
+        width: 100%;
+        max-width: 500px;
+        transition: transform 0.3s;
+      }
+
+      .prodotto-card img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .prodotto-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .prodotto-descrizione {
+        padding: 20px;
+      }
+
+      .prodotto-descrizione h3 {
+        color: #f1c40f;
+        margin-bottom: 15px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px 20px;
+        border-top: 3px solid #f1c40f;
+        margin-top: 60px;
+      }
+
+      .contatti-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .contatti-list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .icon-circle {
+        margin-right: 15px;
+      }
     </style>
   </head>
+
   <body>
     <header>
       <div class="menu-toggle" id="menu-btn" onclick="toggleMenu()">
@@ -120,7 +199,13 @@
       </div>
 
       <nav id="side-menu" class="nav-menu">
-        <div class="close-btn" onclick="toggleMenu()">×</div>
+        <div
+          class="close-btn"
+          onclick="toggleMenu()"
+          style="cursor: pointer; font-size: 2rem; align-self: flex-end"
+        >
+          ×
+        </div>
         <a href="index.html">Home</a>
         <a href="FrmRacing.html">FrmRacing</a>
         <a href="Foto.html">Foto</a>
@@ -128,117 +213,116 @@
         <a href="Recensioni.html">Recensioni</a>
       </nav>
 
-      <img src="img/frm-racing/logofmrracing-empty-white.png" alt="Logo FRM Racing" class="logo" />
+      <img
+        src="img/frm-racing/logofmrracing-empty-white.png"
+        alt="Logo FRM Racing"
+        class="logo"
+      />
     </header>
 
-    <!-- HERO -->
-    <section class="hero-frmracing reveal">
+    <section class="hero-frmracing">
       <div class="hero-content-frmracing">
-        <h2>FRM Racing</h2>
+        <h1>FRM Racing</h1>
         <p>Passione e Competenza dal 1984<br />Oltre 40 Anni di Esperienza</p>
       </div>
     </section>
 
     <main>
-      <p class="descrizione">
-        Meccanico appassionato e professionista della guida sportiva 🏎️,<br />
-        specializzato nella preparazione e ottimizzazione di auto Swift Sport ZC33S.<br />
-        Progetto e realizzo componenti aftermarket di alta qualità, studiati per migliorare le prestazioni e l’affidabilità dei veicoli sportivi.<br />
-        La mia esperienza spazia dalla progettazione di parti meccaniche e sistemi di sospensioni, fino alla messa a punto di assetti personalizzati e tuning elettronico.<br />
-        Ogni lavoro è pensato per unire precisione tecnica, passione per la guida e performance ad alto livello.<br />
-        Segui FRM Racing su Instagram e TikTok per vedere le nostre preparazioni e le auto in azione 🏁.
-      </p>
-    </header>
+      <section class="descrizione">
+        <p>
+          Meccanico appassionato e professionista della guida sportiva 🏎️,<br />
+          specializzato nella preparazione e ottimizzazione di auto Swift Sport
+          ZC33S.<br />
+          Progetto e realizzo componenti aftermarket di alta qualità, studiati
+          per migliorare le prestazioni e l’affidabilità dei veicoli
+          sportivi.<br />
+          La mia esperienza spazia dalla progettazione di parti meccaniche e
+          sistemi di sospensioni, fino alla messa a punto di assetti
+          personalizzati e tuning elettronico.<br />
+          Ogni lavoro è pensato per unire precisione tecnica, passione per la
+          guida e performance ad alto livello.<br />
+          Segui FRM Racing su Instagram e TikTok per vedere le nostre
+          preparazioni e le auto in azione 🏁.
+        </p>
+      </section>
 
-    <main>
-      <section class="prodotti-home reveal">
-        <h2>Upgrade e Accessori Swift Sport</h2>
-        <p
-          style="
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 30px auto;
-            font-size: 1.1rem;
-          "
-        >
+      <section class="sezione-prodotti">
+        <div class="sezione-titolo">
+          <h2>Upgrade e Accessori Swift Sport</h2>
+        </div>
+
+        <p style="max-width: 850px; font-size: 1.1rem; margin-bottom: 40px">
           Scopri i nostri prodotti pensati per ottimizzare le prestazioni della
-          tua Swift Sport e aggiungere stile agli interni. <br />
+          tua Swift Sport e aggiungere stile agli interni.<br />
           Componenti progettati con cura, materiali di alta qualità e soluzioni
-          plug&play per un’installazione semplice e veloce. <br />
+          plug&play per un’installazione semplice e veloce.<br />
           Contattaci per informazioni sui prezzi e disponibilità, saremo felici
           di consigliarti la soluzione migliore per la tua auto!
         </p>
-        <div class="prodotto-card reveal">
-          <img
-            src="img/frm-racing/manometri.png"
-            alt="Supporto Manometro Swift Sport"
-          />
-          <div class="prodotto-descrizione">
-            <h3>Supporto Manometro Swift Sport</h3>
-            <p>
-              Supporto manometro specifico per integrare perfettamente la
-              strumentazione aggiuntiva al posto delle bocchette aria.<br />
-              Design pulito che mantiene lo stile originale degli interni.<br />
-              <strong>Caratteristiche:</strong><br />
-              ⚙️ Compatibile con manometri da 52mm e 60mm.<br />
-              🔧 Installazione plug&play al posto della bocchetta/supporto
-              originale.<br />
-              🔥 Materiale resistente alle alte temperature.<br />
-              ✅ Look racing e discreto.<br />
-              Perfetto per monitorare turbo, temperatura olio o pressione!
-            </p>
-          </div>
-        </div>
 
-        <div class="prodotto-card reveal">
-          <img
-            src="img/frm-racing/rimozioneEGR.png"
-            alt="Kit Rimozione EGR Swift Hybrid"
-          />
-          <div class="prodotto-descrizione">
-            <h3>Kit Rimozione EGR Swift Hybrid</h3>
-            <p>
-              Kit FRM Racing per la rimozione dell’EGR, progettato per il motore
-              1.4 Hybrid.<br />
-              Essenziale quando si installano downpipe sportivi.<br />
-              ⚖️ Riduzione Peso: il sistema EGR originale pesa 2.125g.<br />
-              🌡️ Addio Incrostazioni e Calore: aspirazione pulita e temperature
-              stabili.<br />
-              🛠️ Qualità Artigianale: piastre in acciaio tagliate al laser, tubo
-              in alluminio, design Plug&Play.<br />
-              Motore più fluido, condotti immacolati e vano motore ordinato.<br />
-              ⚠️ Nota: richiede l’esclusione elettronica della valvola EGR in
-              centralina.
-            </p>
+        <div class="prodotti-grid">
+          <div class="prodotto-card">
+            <img
+              src="img/frm-racing/manometri.png"
+              alt="Supporto Manometro Swift Sport"
+            />
+            <div class="prodotto-descrizione">
+              <h3>Supporto Manometro Swift Sport</h3>
+              <p>
+                Supporto manometro specifico per integrare perfettamente la
+                strumentazione aggiuntiva al posto delle bocchette aria.<br />
+                Design pulito che mantiene lo stile originale degli interni.<br /><br />
+                <strong>Caratteristiche:</strong><br />
+                ⚙️ Compatibile con manometri da 52mm e 60mm.<br />
+                🔧 Installazione plug&play al posto della bocchetta
+                originale.<br />
+                🔥 Materiale resistente alle alte temperature.<br />
+                ✅ Look racing e discreto.
+              </p>
+            </div>
+          </div>
+
+          <div class="prodotto-card">
+            <img
+              src="img/frm-racing/rimozioneEGR.png"
+              alt="Kit Rimozione EGR Swift Hybrid"
+            />
+            <div class="prodotto-descrizione">
+              <h3>Kit Rimozione EGR Swift Hybrid</h3>
+              <p>
+                Kit FRM Racing per la rimozione dell’EGR, progettato per il
+                motore 1.4 Hybrid.<br />
+                Essenziale quando si installano downpipe sportivi.<br /><br />
+                ⚖️ Riduzione Peso: il sistema EGR originale pesa 2.125g.<br />
+                🌡️ Addio Incrostazioni: aspirazione pulita e temperature
+                stabili.<br />
+                🛠️ Qualità Artigianale: piastre in acciaio tagliate al laser.<br />
+                ⚠️ Nota: richiede l’esclusione elettronica in centralina.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <div class="info-section" id="info">
-        <section class="contatti reveal">
-          <h2>Contatti</h2>
-          <ul class="contatti-list">
-            <li>
-              <div class="icon-circle"><i class="fab fa-instagram"></i></div>
-              <a href="https://www.instagram.com/frm_racing_/" target="_blank"
-                >@frm_racing_</a
-              >
-            </li>
-            <li>
-              <div class="icon-circle">
-                <img
-                  src="img/tiktok.png"
-                  alt="TikTok FRM Racing"
-                  style="width: 28px; height: 28px"
-                />
-              </div>
-              <a href="https://www.tiktok.com/@frm.racing" target="_blank"
-                >@frm.racing</a
-              >
-            </li>
-          </ul>
-        </section>
-      </div>
+      <section class="contatti" id="info">
+        <h2>Contatti</h2>
+        <ul class="contatti-list">
+          <li>
+            <div class="icon-circle"><i class="fab fa-instagram"></i></div>
+            <a href="https://www.instagram.com/frm_racing_/" target="_blank"
+              >@frm_racing_</a
+            >
+          </li>
+          <li>
+            <div class="icon-circle">
+              <i class="fab fa-tiktok"></i>
+            </div>
+            <a href="https://www.tiktok.com/@frm.racing" target="_blank"
+              >@frm.racing</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>
@@ -247,13 +331,10 @@
     </footer>
 
     <script>
-      const menuBtn = document.getElementById("menu-btn");
       const sideMenu = document.getElementById("side-menu");
-
       function toggleMenu() {
         sideMenu.classList.toggle("active");
       }
     </script>
-    <script src="js/script.js"></script>
   </body>
 </html>
