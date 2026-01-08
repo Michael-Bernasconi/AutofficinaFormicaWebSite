@@ -244,6 +244,16 @@ footer {
   }
 }
 
+/* Logo fisso in alto a sinistra */
+.logo {
+  position: fixed; /* Lo fissa alla finestra */
+  top: 10px; /* distanza dal bordo superiore */
+  left: 10px; /* distanza dal bordo sinistro */
+  width: 250px; /* puoi regolare la dimensione */
+  height: auto;
+  z-index: 1000; /* sopra tutti gli altri elementi */
+}
+
 /* ===============================
    ANIMAZIONI SCROLL
    =============================== */
