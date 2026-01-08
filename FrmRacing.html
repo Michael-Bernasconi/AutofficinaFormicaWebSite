@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRM Racing - Autofficina Formica</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        background-color: #0e0e0e;
+        color: #ffffff;
+        font-family: "Segoe UI", Roboto, Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        color: #f1c40f;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        padding: 20px;
+        text-align: center;
+        border-bottom: 3px solid #f1c40f;
+        position: relative;
+      }
+
+      .logo {
+        width: 250px;
+        margin-bottom: 15px;
+      }
+
+      .menu-toggle {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        z-index: 1001;
+      }
+
+      .menu-toggle span {
+        display: block;
+        width: 35px;
+        height: 4px;
+        background: #fff;
+        margin-bottom: 6px;
+        border-radius: 2px;
+      }
+
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100%;
+        background: rgba(14, 14, 14, 0.98);
+        z-index: 1000;
+        padding: 80px 25px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.4s;
+      }
+
+      .nav-menu.active {
+        right: 0;
+      }
+
+      .nav-menu a {
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+      }
+
+      .descrizione {
+        max-width: 900px;
+        margin: 0 auto 40px auto;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        text-align: center;
+      }
+
+      .prodotti-home {
+        max-width: 1100px;
+        margin: 0 auto 60px auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .prodotti-home h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #f1c40f;
+        width: 100%;
+      }
+
+      .prodotto-card {
+        background: #1c1c1c;
+        border-radius: 15px;
+        overflow: hidden;
+        width: 100%;
+        max-width: 500px;
+        transition: transform 0.3s;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .prodotto-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .prodotto-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .prodotto-descrizione {
+        padding: 20px;
+      }
+
+      .prodotto-descrizione h3 {
+        margin-bottom: 15px;
+        color: #f1c40f;
+      }
+
+      .info-section {
+        max-width: 900px;
+        margin: 0 auto 60px auto;
+        padding: 0 20px;
+      }
+
+      .contatti h2 {
+        margin-bottom: 25px;
+        color: #f1c40f;
+        text-align: center;
+      }
+
+      .contatti-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .contatti-list li {
+        display: flex;
+        align-items: center;
+      }
+
+      .icon-circle {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #f1c40f;
+        color: #0e0e0e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        font-size: 1.2rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px 20px;
+        border-top: 3px solid #f1c40f;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="menu-toggle" id="menu-btn" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+
+      <nav id="side-menu" class="nav-menu">
+        <div class="close-btn" onclick="toggleMenu()">×</div>
+        <a href="index.html">Home</a>
+        <a href="FrmRacing.html">FrmRacing</a>
+        <a href="Foto.html">Foto</a>
+        <a href="ChiSiamo.html">Chi Siamo</a>
+        <a href="Recensioni.html">Recensioni</a>
+      </nav>
+
+      <img
+        src="img/frm-racing/logofmrracing-empty-white.png"
+        alt="Logo FRM Racing"
+        class="logo"
+      />
+
+      <p class="descrizione">
+        Meccanico appassionato e professionista della guida sportiva 🏎️,<br />
+        specializzato nella preparazione e ottimizzazione di auto Swift Sport
+        ZC33S.<br />
+        Progetto e realizzo componenti aftermarket di alta qualità, studiati per
+        migliorare le prestazioni e l’affidabilità dei veicoli sportivi.<br />
+        La mia esperienza spazia dalla progettazione di parti meccaniche e
+        sistemi di sospensioni, fino alla messa a punto di assetti
+        personalizzati e tuning elettronico.<br />
+        Ogni lavoro è pensato per unire precisione tecnica, passione per la
+        guida e performance ad alto livello.<br />
+        Segui FRM Racing su Instagram e TikTok per vedere le nostre preparazioni
+        e le auto in azione 🏁.
+      </p>
+    </header>
+
+    <main>
+      <section class="prodotti-home reveal">
+        <h2>Upgrade e Accessori Swift Sport</h2>
+        <p
+          style="
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            font-size: 1.1rem;
+          "
+        >
+          Scopri i nostri prodotti pensati per ottimizzare le prestazioni della
+          tua Swift Sport e aggiungere stile agli interni. <br />
+          Componenti progettati con cura, materiali di alta qualità e soluzioni
+          plug&play per un’installazione semplice e veloce. <br />
+          Contattaci per informazioni sui prezzi e disponibilità, saremo felici
+          di consigliarti la soluzione migliore per la tua auto!
+        </p>
+        <div class="prodotto-card reveal">
+          <img
+            src="img/frm-racing/manometri.png"
+            alt="Supporto Manometro Swift Sport"
+          />
+          <div class="prodotto-descrizione">
+            <h3>Supporto Manometro Swift Sport</h3>
+            <p>
+              Supporto manometro specifico per integrare perfettamente la
+              strumentazione aggiuntiva al posto delle bocchette aria.<br />
+              Design pulito che mantiene lo stile originale degli interni.<br />
+              <strong>Caratteristiche:</strong><br />
+              ⚙️ Compatibile con manometri da 52mm e 60mm.<br />
+              🔧 Installazione plug&play al posto della bocchetta/supporto
+              originale.<br />
+              🔥 Materiale resistente alle alte temperature.<br />
+              ✅ Look racing e discreto.<br />
+              Perfetto per monitorare turbo, temperatura olio o pressione!
+            </p>
+          </div>
+        </div>
+
+        <div class="prodotto-card reveal">
+          <img
+            src="img/frm-racing/rimozioneEGR.png"
+            alt="Kit Rimozione EGR Swift Hybrid"
+          />
+          <div class="prodotto-descrizione">
+            <h3>Kit Rimozione EGR Swift Hybrid</h3>
+            <p>
+              Kit FRM Racing per la rimozione dell’EGR, progettato per il motore
+              1.4 Hybrid.<br />
+              Essenziale quando si installano downpipe sportivi.<br />
+              ⚖️ Riduzione Peso: il sistema EGR originale pesa 2.125g.<br />
+              🌡️ Addio Incrostazioni e Calore: aspirazione pulita e temperature
+              stabili.<br />
+              🛠️ Qualità Artigianale: piastre in acciaio tagliate al laser, tubo
+              in alluminio, design Plug&Play.<br />
+              Motore più fluido, condotti immacolati e vano motore ordinato.<br />
+              ⚠️ Nota: richiede l’esclusione elettronica della valvola EGR in
+              centralina.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="info-section" id="info">
+        <section class="contatti reveal">
+          <h2>Contatti</h2>
+          <ul class="contatti-list">
+            <li>
+              <div class="icon-circle"><i class="fab fa-instagram"></i></div>
+              <a href="https://www.instagram.com/frm_racing_/" target="_blank"
+                >@frm_racing_</a
+              >
+            </li>
+            <li>
+              <div class="icon-circle">
+                <img
+                  src="img/tiktok.png"
+                  alt="TikTok FRM Racing"
+                  style="width: 28px; height: 28px"
+                />
+              </div>
+              <a href="https://www.tiktok.com/@frm.racing" target="_blank"
+                >@frm.racing</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>Supported by Autofficina Formica | Via Torino 43, Olgiate Comasco</p>
+      <p>© 2025 FRM Racing – Tutti i diritti riservati</p>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const sideMenu = document.getElementById("side-menu");
+
+      function toggleMenu() {
+        sideMenu.classList.toggle("active");
+      }
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
