@@ -24,10 +24,7 @@
         text-decoration: none;
         transition: 0.3s;
       }
-
-      a:hover {
-        text-decoration: underline;
-      }
+      a:hover { text-decoration: underline; }
 
       header {
         padding: 20px;
@@ -36,10 +33,7 @@
         position: relative;
       }
 
-      .logo {
-        width: 250px;
-        margin-bottom: 15px;
-      }
+      .logo { width: 200px; margin-bottom: 15px; }
 
       .menu-toggle {
         position: absolute;
@@ -48,7 +42,6 @@
         cursor: pointer;
         z-index: 1001;
       }
-
       .menu-toggle span {
         display: block;
         width: 35px;
@@ -71,115 +64,53 @@
         flex-direction: column;
         transition: 0.4s;
       }
+      .nav-menu.active { right: 0; }
+      .nav-menu a { margin-bottom: 20px; font-size: 1.3rem; }
 
-      .nav-menu.active {
-        right: 0;
-      }
-
-      .nav-menu a {
-        margin-bottom: 20px;
-        font-size: 1.3rem;
-      }
-
-      .descrizione {
-        max-width: 900px;
-        margin: 0 auto 40px auto;
-        font-size: 1.1rem;
-        line-height: 1.8;
-        text-align: center;
-      }
-
-      .prodotti-home {
-        max-width: 1100px;
-        margin: 0 auto 60px auto;
-        padding: 0 20px;
+      /* HERO */
+      .hero-frmracing {
+        height: 60vh;
         display: flex;
         justify-content: center;
-        gap: 40px;
-        flex-wrap: wrap;
-      }
-
-      .prodotti-home h2 {
-        text-align: center;
-        margin-bottom: 40px;
-        color: #f1c40f;
-        width: 100%;
-      }
-
-      .prodotto-card {
-        background: #1c1c1c;
-        border-radius: 15px;
-        overflow: hidden;
-        width: 100%;
-        max-width: 500px;
-        transition: transform 0.3s;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .prodotto-card:hover {
-        transform: translateY(-5px);
-      }
-
-      .prodotto-card img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-      }
-
-      .prodotto-descrizione {
-        padding: 20px;
-      }
-
-      .prodotto-descrizione h3 {
-        margin-bottom: 15px;
-        color: #f1c40f;
-      }
-
-      .info-section {
-        max-width: 900px;
-        margin: 0 auto 60px auto;
-        padding: 0 20px;
-      }
-
-      .contatti h2 {
-        margin-bottom: 25px;
-        color: #f1c40f;
-        text-align: center;
-      }
-
-      .contatti-list {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        flex-wrap: wrap;
-      }
-
-      .contatti-list li {
-        display: flex;
         align-items: center;
+        text-align: center;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url("img/chisiamo.jpg"); /* percorso corretto */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
       }
 
-      .icon-circle {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        background: #f1c40f;
-        color: #0e0e0e;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 10px;
+      .hero-frmracing h2 {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      .hero-frmracing p {
+        color: #f1c40f;
+        font-weight: bold;
         font-size: 1.2rem;
+        text-transform: uppercase;
       }
 
-      footer {
-        text-align: center;
-        padding: 40px 20px;
-        border-top: 3px solid #f1c40f;
+      .descrizione, .prodotti-home, .prodotto-card, .contatti { 
+        max-width: 1100px; 
+        margin: 0 auto; 
+        padding: 0 20px; 
       }
+
+      .prodotti-home { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; margin-bottom: 60px; }
+      .prodotto-card { background: #1c1c1c; border-radius: 15px; overflow: hidden; width: 100%; max-width: 500px; transition: transform 0.3s; }
+      .prodotto-card img { width: 100%; object-fit: cover; }
+      .prodotto-card:hover { transform: translateY(-5px); }
+      .prodotto-descrizione h3 { color: #f1c40f; margin-bottom: 15px; }
+      footer { text-align: center; padding: 40px 20px; border-top: 3px solid #f1c40f; }
     </style>
   </head>
   <body>
@@ -197,25 +128,25 @@
         <a href="Recensioni.html">Recensioni</a>
       </nav>
 
-      <img
-        src="img/frm-racing/logofmrracing-empty-white.png"
-        alt="Logo FRM Racing"
-        class="logo"
-      />
+      <img src="img/frm-racing/logofmrracing-empty-white.png" alt="Logo FRM Racing" class="logo" />
+    </header>
 
+    <!-- HERO -->
+    <section class="hero-frmracing reveal">
+      <div class="hero-content-frmracing">
+        <h2>FRM Racing</h2>
+        <p>Passione e Competenza dal 1984<br />Oltre 40 Anni di Esperienza</p>
+      </div>
+    </section>
+
+    <main>
       <p class="descrizione">
         Meccanico appassionato e professionista della guida sportiva 🏎️,<br />
-        specializzato nella preparazione e ottimizzazione di auto Swift Sport
-        ZC33S.<br />
-        Progetto e realizzo componenti aftermarket di alta qualità, studiati per
-        migliorare le prestazioni e l’affidabilità dei veicoli sportivi.<br />
-        La mia esperienza spazia dalla progettazione di parti meccaniche e
-        sistemi di sospensioni, fino alla messa a punto di assetti
-        personalizzati e tuning elettronico.<br />
-        Ogni lavoro è pensato per unire precisione tecnica, passione per la
-        guida e performance ad alto livello.<br />
-        Segui FRM Racing su Instagram e TikTok per vedere le nostre preparazioni
-        e le auto in azione 🏁.
+        specializzato nella preparazione e ottimizzazione di auto Swift Sport ZC33S.<br />
+        Progetto e realizzo componenti aftermarket di alta qualità, studiati per migliorare le prestazioni e l’affidabilità dei veicoli sportivi.<br />
+        La mia esperienza spazia dalla progettazione di parti meccaniche e sistemi di sospensioni, fino alla messa a punto di assetti personalizzati e tuning elettronico.<br />
+        Ogni lavoro è pensato per unire precisione tecnica, passione per la guida e performance ad alto livello.<br />
+        Segui FRM Racing su Instagram e TikTok per vedere le nostre preparazioni e le auto in azione 🏁.
       </p>
     </header>
 

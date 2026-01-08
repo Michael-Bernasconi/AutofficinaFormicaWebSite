@@ -26,22 +26,10 @@
       </nav>
 
       <img src="img/logo2.png" alt="Logo Autofficina Formica" class="logo" />
-      <p class="descrizione reveal">
-        Dal 1984, esperienza, qualità e professionalità 🔧<br />
-        Siamo specializzati nella riparazione di auto, furgoni, scooter e
-        MTB,<br />
-        con servizi completi di montaggio e bilanciatura pneumatici.<br />
-        Ci troviamo a Olgiate Comasco (CO), pronti a offrire assistenza
-        tecnica<br />
-        e consulenza professionale per ogni esigenza meccanica ed
-        elettronica.<br />
-        La nostra passione per i veicoli ci guida a garantire lavori precisi,<br />
-        sicuri e duraturi, sempre al passo con le innovazioni tecnologiche.<br />
-        Affidati a noi per performance, sicurezza e cura del tuo veicolo.
-      </p>
     </header>
 
     <main>
+      <!-- Hero immagine -->
       <section
         class="hero reveal"
         style="
@@ -51,8 +39,56 @@
             ),
             url(img/wallpaper.jpeg);
         "
-      ></section>
+      >
+        <!-- Scritta sopra l'immagine -->
+        <h1
+          style="
+            color: var(--primary);
+            font-size: 3rem;
+            font-weight: 400;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+          "
+        >
+          Autofficina Formica
+        </h1>
+        <!-- Due righe di introduzione in bianco -->
+        <p
+          style="
+            color: #ffffff;
+            font-size: 1.2rem;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            max-width: 700px;
+            line-height: 1.5;
+          "
+        >
+          Passione e professionalità al servizio del tuo veicolo.<br />
+          Riparazioni, manutenzione e performance, tutto in un unico posto.
+        </p>
+      </section>
 
+      <!-- Descrizione sotto l'immagine -->
+      <div class="info-section-full storia-centrata reveal">
+        <p>
+          Dal 1984, esperienza, qualità e professionalità 🔧. Siamo
+          specializzati nella riparazione di auto, furgoni, scooter e MTB, con
+          servizi completi di montaggio e bilanciatura pneumatici. <br />
+          Ci troviamo a Olgiate Comasco (CO), pronti a offrire assistenza
+          tecnica e consulenza professionale per ogni esigenza meccanica ed
+          elettronica. <br />
+          La nostra passione per i veicoli ci guida a garantire lavori precisi,
+          sicuri e duraturi, sempre al passo con le innovazioni tecnologiche.
+        </p>
+      </div>
+
+      <!-- Servizi -->
       <section class="servizi-home reveal">
         <div class="servizio-card reveal">
           <i class="fas fa-tools"></i>
@@ -71,6 +107,7 @@
         </div>
       </section>
 
+      <!-- Contatti e orari -->
       <div class="info-section reveal" id="info">
         <section class="contatti">
           <h2>Social</h2>

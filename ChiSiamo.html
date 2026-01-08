@@ -9,6 +9,39 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <style>
+      /* Esempio CSS per Hero */
+      .hero-chisiamo {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url("img/chisiamo.jpg"); /* percorso relativo a HTML */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .hero-chisiamo h2 {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      .hero-chisiamo p {
+        color: #f1c40f; /* variabile primaria */
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -26,61 +59,20 @@
       </nav>
 
       <img src="img/logo2.png" alt="Logo Autofficina Formica" class="logo" />
-      <h1>Chi Siamo</h1>
-      <p
-        style="
-          color: var(--primary);
-          font-weight: bold;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-        "
-      >
-        Passione e Competenza dal 1984
-      </p>
     </header>
 
     <main>
-      <section
-        class="hero reveal"
-        style="
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.5),
-              rgba(0, 0, 0, 0.8)
-            ),
-            url(img/chisiamo.jpg);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-        "
-      >
-        <div class="hero-content-chisiamo reveal">
-          <h2
-            style="
-              border: none;
-              color: white;
-              font-size: 3rem;
-              font-weight: 900;
-              text-transform: uppercase;
-            "
-          >
-            Oltre 40 Anni di Esperienza
-          </h2>
-          <p
-            style="
-              color: var(--primary);
-              font-weight: bold;
-              font-size: 1.2rem;
-              text-transform: uppercase;
-            "
-          >
-            La nostra storia, il tuo motore.
-          </p>
+      <!-- HERO -->
+      <section class="hero-chisiamo reveal">
+        <div class="hero-content-chisiamo">
+          <h1>CHI SIAMO</h1>
+          <p>Passione e Competenza dal 1984<br />Oltre 40 Anni di Esperienza</p>
         </div>
       </section>
 
+      <!-- STORIA -->
       <div class="info-section-full reveal">
-        <section class="storia-centrata reveal">
+        <section class="storia-centrata">
           <h2>La Nostra Storia</h2>
           <p>
             L'<strong>Autofficina Formica</strong> nasce nel 1984 a Olgiate
@@ -94,7 +86,8 @@
           </p>
         </section>
 
-        <section class="valori-centrati reveal">
+        <!-- VALORI -->
+        <section class="valori-centrati">
           <ul
             class="contatti-list"
             style="
@@ -122,50 +115,50 @@
         </section>
       </div>
 
+      <!-- SERVIZI -->
       <h2 class="titolo-servizi-centrato">I Nostri Servizi</h2>
-
       <div class="servizi-home reveal">
-        <div class="servizio-card reveal">
+        <div class="servizio-card">
           <i class="fas fa-tools"></i>
           <h3>Riparazione Autovetture</h3>
           <p>Meccanica professionale.</p>
         </div>
-        <div class="servizio-card reveal">
+        <div class="servizio-card">
           <i class="fas fa-wrench"></i>
           <h3>Tagliando Motore</h3>
           <p>Manutenzione completa.</p>
         </div>
-        <div class="servizio-card reveal">
+        <div class="servizio-card">
           <i class="fas fa-compact-disc"></i>
           <h3>Gommista</h3>
           <p>Vendita e montaggio.</p>
         </div>
-        <div class="servizio-card reveal">
+        <div class="servizio-card">
           <i class="fas fa-shuttle-van"></i>
           <h3>Multiveicolo</h3>
           <p>Furgoni, Moto e MTB.</p>
         </div>
-        <div class="servizio-card reveal">
+        <div class="servizio-card">
           <i class="fas fa-laptop-code"></i>
           <h3>Centraline</h3>
           <p>Mappature software.</p>
         </div>
-        <div class="servizio-card reveal">
+        <div class="servizio-card">
           <i class="fas fa-car-battery"></i>
           <h3>Elettrauto</h3>
           <p>Diagnosi e riparazioni.</p>
         </div>
-        <div class="servizio-card reveal">
+        <div class="servizio-card">
           <i class="fas fa-flag-checkered"></i>
           <h3>Componenti Racing</h3>
           <p>Kit alta prestazione.</p>
         </div>
-        <div class="servizio-card reveal">
+        <div class="servizio-card">
           <i class="fas fa-tachometer-alt"></i>
           <h3>Elaborazioni</h3>
           <p>Preparazioni sportive.</p>
         </div>
-        <div class="servizio-card reveal">
+        <div class="servizio-card">
           <i class="fas fa-wind"></i>
           <h3>Scarichi Sportivi</h3>
           <p>Sistemi performanti.</p>
