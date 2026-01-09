@@ -5,12 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recensioni - Autofficina Formica</title>
     <link rel="stylesheet" href="css/style.css" />
+
     <style>
+      /* HERO con wallpaper (uguale a Chi Siamo) */
+      .hero-recensioni {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url("img/wallpaper.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .hero-recensioni h1 {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      .hero-recensioni p {
+        color: #f1c40f;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+
+      /* RECENSIONI */
       .recensioni-container {
         max-width: 900px;
         margin: 2rem auto;
         padding: 0 1rem;
       }
+
       .recensione {
         border: 1px solid #f5b50a;
         border-radius: 8px;
@@ -18,20 +53,25 @@
         margin-bottom: 1rem;
         background-color: #0e0e0e;
       }
+
       .recensione h3 {
         margin: 0 0 0.5rem 0;
         font-size: 1.1rem;
       }
+
       .stelle {
         color: #f5b50a;
         margin-bottom: 0.5rem;
       }
+
       .recensione p {
         margin: 0.5rem 0;
       }
     </style>
   </head>
+
   <body>
+    <!-- HEADER -->
     <header>
       <div class="menu-toggle" id="menu-btn" onclick="toggleMenu()">
         <span></span>
@@ -49,21 +89,28 @@
       </nav>
 
       <img src="img/logo2.png" alt="Logo Autofficina Formica" class="logo" />
-      <h1>Recensioni Clienti</h1>
-      <p class="descrizione">
-        Scopri cosa dicono di noi i nostri clienti soddisfatti.
-      </p>
     </header>
 
+    <!-- HERO -->
+    <section class="hero-recensioni reveal">
+      <div>
+        <h1>RECENSIONI</h1>
+        <p>
+          La Voce dei Nostri Clienti<br />
+          Qualità, Passione e Affidabilità
+        </p>
+      </div>
+    </section>
+
+    <!-- RECENSIONI -->
     <main class="recensioni-container reveal">
-      <div class="recensione">
+      <div class="recensione reveal">
         <h3>Fabio Cuccolo</h3>
         <div class="stelle">★★★★★</div>
         <p>
           Lo scooter di mio figlio, un Malaguti F12, era grippato, oltre a altri
-          problemi. Lo hanno rimesso a nuovo. La spesa è stata molto
-          ragionevole. Il titolare e i figli, super gentili e disponibili.
-          Porterò anche la mia auto presso questa officina. Consigliatissimo.
+          problemi. Lo hanno rimesso a nuovo. Spesa ragionevole, gentilezza e
+          disponibilità assoluta. Consigliatissimo.
         </p>
       </div>
 
@@ -71,22 +118,18 @@
         <h3>TheTuner92</h3>
         <div class="stelle">★★★★★</div>
         <p>
-          Mi sono rivolto a loro per effettuare il tagliando alla mia Suzuki
-          Swift Sport e hanno effettuato un lavoro eccellente! Sono
-          professionali, precisi, onesti e usano componenti di qualità, non
-          lasciano nulla al caso e sono pure simpatici! Mi rivolgerò sicuramente
-          a loro per prossimi tagliandi, riparazioni ed eventuali modifiche!
+          Tagliando Suzuki Swift Sport eseguito in modo eccellente.
+          Professionali, precisi, onesti e molto competenti. Tornerò
+          sicuramente.
         </p>
       </div>
 
       <div class="recensione reveal">
-        <h3>ester</h3>
+        <h3>Ester</h3>
         <div class="stelle">★★★★★</div>
         <p>
-          Super gentili, cortesi, professionali e soprattutto simpatici! Con
-          loro so che la mia macchina è sempre in buone mani. Lavoro svolto in
-          modo impeccabile, la cura del cliente è di casa. 5 stelle più che
-          meritate.
+          Gentili, professionali e sempre disponibili. Con loro la mia auto è
+          sempre in ottime mani. Cura del cliente impeccabile.
         </p>
       </div>
 
@@ -94,10 +137,8 @@
         <h3>Daniele Passanisi</h3>
         <div class="stelle">★★★★★</div>
         <p>
-          Ci è stato consigliato da un'amica, e abbiamo portato la nostra Golf,
-          e direi che ci siamo trovati molto bene, molto professionali e
-          gentilissimi. Ti vengono incontro in tutti i modi, super consigliati,
-          grazie!
+          Portata la nostra Golf, servizio eccellente, grande professionalità e
+          cortesia. Super consigliati.
         </p>
       </div>
 
@@ -105,30 +146,23 @@
         <h3>Dario Muriella</h3>
         <div class="stelle">★★★★★</div>
         <p>
-          Avevo un problema con una spia nella mia Audi A3 che non si riusciva a
-          risolvere in nessun modo. Il signor Formica con i suoi figli mi hanno
-          risolto il problema ad un prezzo super ragionevole. Li consiglio
-          veramente! Professionalità, puntualità e cortesia. Grazie, alla
-          prossima!
+          Problema complesso su Audi A3 risolto rapidamente e a prezzo onesto.
+          Competenza e puntualità.
         </p>
       </div>
 
       <div class="recensione reveal">
         <h3>Mirko</h3>
         <div class="stelle">★★★★★</div>
-        <p>
-          Rapidi, cordiali e competenti, in poche parole professionisti! Sono
-          molto contento di aver scelto loro come preparatori.
-        </p>
+        <p>Rapidi, cordiali e competenti. Veri professionisti del settore.</p>
       </div>
 
       <div class="recensione reveal">
         <h3>Rene Benzoni</h3>
         <div class="stelle">★★★★★</div>
         <p>
-          Ho portato la mia moto, un Kle del 2003 per restauro completo. Dopo
-          l’ottimo lavoro svolto la moto gira come un orologio e spinge in tutti
-          i regimi come non mai, nonostante l’età. Consigliatissimo!
+          Restauro completo moto KLE 2003: risultato eccezionale, gira
+          perfettamente. Consigliatissimo.
         </p>
       </div>
 
@@ -136,41 +170,30 @@
         <h3>Mauro Bucci</h3>
         <div class="stelle">★★★★★</div>
         <p>
-          Top del top, mi trattano sempre benissimo, la mia macchina non è mai
-          andata meglio, risolvono sempre tutti i problemi in tempo zero.
-          Affidabilità e competenza, i migliori nel settore.
+          Affidabilità totale, la mia auto non è mai andata meglio. I migliori.
         </p>
       </div>
 
       <div class="recensione reveal">
         <h3>Littera Diego</h3>
         <div class="stelle">★★★★★</div>
-        <p>
-          Se cercate un meccanico di fiducia l'avete trovato! Officina con
-          professionisti seri!
-        </p>
+        <p>Officina seria e professionale. Meccanici di fiducia.</p>
       </div>
 
       <div class="recensione reveal">
         <h3>Neder</h3>
         <div class="stelle">★★★★★</div>
-        <p>
-          Veri appassionati di motori, lavorano sulle auto come se fossero loro,
-          molto competenti e precisi, consigliatissimi.
-        </p>
+        <p>Veri appassionati di motori, precisione e competenza assoluta.</p>
       </div>
 
       <div class="recensione reveal">
         <h3>Eleonora Zurlo</h3>
         <div class="stelle">★★★★★</div>
-        <p>
-          Professionali, rapidi, gentilissimi, tanta passione e voglia di
-          aiutare il cliente! Hanno trovato subito una soluzione pratica per le
-          mie chiavi, e so che da oggi mi affiderò solo a loro!
-        </p>
+        <p>Gentilissimi e rapidissimi. Da oggi la mia officina di fiducia.</p>
       </div>
     </main>
 
+    <!-- FOOTER -->
     <footer style="text-align: center">
       <p>
         Via Torino 43, Olgiate Comasco | Tel: 031 944618 | Cell: 375 6848302
