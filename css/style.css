@@ -338,3 +338,38 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ===============================
+   MENU ORIZZONTALE VISIBILE
+   =============================== */
+.nav-desktop {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 70px; /* distanza tra le voci */
+  align-items: center;
+}
+
+.nav-desktop a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--white);
+  position: relative;
+}
+
+.nav-desktop a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav-desktop a:hover::after {
+  width: 100%;
+}
