@@ -1,4 +1,4 @@
-# 🚗 Autofficina Formica – Website# 🚗 Autofficina Formica – Website  
+# 🚗 Autofficina Formica – Website
 
 This project is a simple and responsive website for **Autofficina Formica**, an Italian auto repair workshop operating since 1984. The website is available at **[autofficinaformica.it](https://autofficinaformica.it)**.  
 
@@ -20,5 +20,6 @@ Check out the live website: [autofficinaformica.it](https://autofficinaformica.i
 ## ©️ Author  
 **Michael Bernasconi**  
 All rights reserved – 2025
+
 
 
