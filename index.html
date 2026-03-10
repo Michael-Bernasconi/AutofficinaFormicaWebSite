@@ -9,8 +9,31 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <style>
+      .whatsapp-fix-top {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        z-index: 9999;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
+    <a href="https://wa.me/393756848302" class="whatsapp-fix-top" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
     <header>
       <img src="img/logo2.png" alt="Logo Autofficina Formica" class="logo" />
       <nav class="nav-desktop">
@@ -23,13 +46,12 @@
     </header>
 
     <main>
-      <!-- Hero immagine -->
       <section
         class="hero-home reveal"
         style="
           background-image:
             linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-            url(&quot;img/wallpaper.jpeg&quot;);
+            url('img/wallpaper.jpeg');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
@@ -67,7 +89,6 @@
           </p>
         </div>
       </section>
-      <!-- Descrizione sotto l'immagine -->
       <div class="info-section-full storia-centrata reveal">
         <p>
           Dal 1984, esperienza, qualità e professionalità 🔧. <br />
@@ -81,7 +102,6 @@
         </p>
       </div>
 
-      <!-- Servizi -->
       <section class="servizi-home reveal">
         <div class="servizio-card reveal">
           <i class="fas fa-tools"></i>
@@ -100,7 +120,6 @@
         </div>
       </section>
 
-      <!-- Contatti e orari -->
       <div class="info-section reveal" id="info">
         <section class="contatti">
           <h2>Social</h2>
