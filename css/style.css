@@ -612,7 +612,6 @@ footer {
   max-width: 1200px;
   margin: 40px auto;
   padding: 0 20px; /* Aggiunto 20px per allinearlo a .info-section-full */
-  background: #111;
   color: #fff;
   text-align: left;
 }
