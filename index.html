@@ -200,7 +200,25 @@
       <p>© 2025 Autofficina Formica – Tutti i diritti riservati</p>
     </footer>
 
-    <script src="js/script.js"></script>
+ <div id="info-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 id="modal-title">Titolo Servizio</h2>
+    <hr style="border: 1px solid var(--primary); margin: 15px 0;">
+    <p id="modal-description">Descrizione dettagliata...</p>
     
+    <div class="modal-actions" style="margin-top: 20px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; align-items: center;">
+        <a id="btn-frm-racing" href="FrmRacing.html" class="modal-button-racing" style="display: none;">
+            Scopri FRMRacing
+        </a>
+        
+        <a href="https://wa.me/393756848302" class="modal-button-whatsapp" target="_blank" style="background-color: #25d366; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+            <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Contattaci
+        </a>
+    </div>
+  </div>
+</div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
