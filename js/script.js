@@ -47,7 +47,7 @@ const infoServizi = {
   "Elaborazioni": "Le elaborazioni sono il cuore pulsante della nostra attività. Ci dedichiamo con passione allo studio e alla trasformazione dei veicoli per superare i limiti di serie, ma non ci fermiamo qui: con il brand <a href='FrmRacing.html' style='color: #f1c40f; text-decoration: underline; font-weight: bold;'>FRMRacing</a>, ci occupiamo dello sviluppo diretto di componenti ad alte prestazioni.",
   "Multiveicolo": "La nostra competenza non si ferma alle auto. Siamo attrezzati per la manutenzione di furgoni, motocicli e offriamo un servizio specializzato per il tuning e la revisione di sospensioni per Mountain Bike (MTB).",
   "Elettrauto": "Gestiamo tutta la parte elettrica del tuo veicolo: dalla sostituzione batteria, sensori di parcheggio e riparazione di alzacristalli o impianti di illuminazione LED/Xenon.",
-  "Componenti FrmRacing": "La nostra linea esclusiva, nata dalla pista e sviluppata per la strada. Progettiamo e realizziamo internamente componenti aftermarket di alta qualità — dai kit di potenziamento agli elementi ricavati dal pieno — specializzati nell'ottimizzazione della Suzuki Swift Sport ZC33S. Ogni pezzo è studiato per massimizzare prestazioni e affidabilità."
+  "Componenti FRMRacing": "La nostra linea esclusiva, nata dalla pista e sviluppata per la strada. Progettiamo e realizziamo internamente componenti aftermarket di alta qualità — dai kit di potenziamento agli elementi ricavati dal pieno — specializzati nell'ottimizzazione della Suzuki Swift Sport ZC33S. Ogni pezzo è studiato per massimizzare prestazioni e affidabilità."
 };
 
 const modal = document.getElementById("info-modal");
@@ -59,10 +59,10 @@ document.querySelectorAll('.servizio-card').forEach(card => {
     const titolo = card.querySelector('h3').innerText.trim();
     
     document.getElementById("modal-title").innerText = titolo;
-    document.getElementById("modal-description").innerHTML = infoServizi[titolo] || "Dettagli in arrivo...";
+    document.getElementById("modal-description").innerHTML = infoServizi[titolo] || "La nostra linea esclusiva, nata dalla pista e sviluppata per la strada. Progettiamo e realizziamo internamente componenti aftermarket di alta qualità — dai kit di potenziamento agli elementi ricavati dal pieno — specializzati nell'ottimizzazione della Suzuki Swift Sport ZC33S. Ogni pezzo è studiato per massimizzare prestazioni e affidabilità.";
     
     // Mostra/Nascondi bottone racing
-    if (titolo === "Elaborazioni" || titolo === "Componenti FrmRacing") {
+    if (titolo === "Elaborazioni" || titolo === "Componenti FRMRacing") {
       btnRacing.style.display = "inline-block";
     } else {
       btnRacing.style.display = "none";
