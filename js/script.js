@@ -47,7 +47,46 @@ const infoServizi = {
   "Elaborazioni": "Le elaborazioni sono il cuore pulsante della nostra attività. Ci dedichiamo con passione allo studio e alla trasformazione dei veicoli per superare i limiti di serie, ma non ci fermiamo qui: con il brand <a href='FrmRacing.html' style='color: #f1c40f; text-decoration: underline; font-weight: bold;'>FRMRacing</a>, ci occupiamo dello sviluppo diretto di componenti ad alte prestazioni.",
   "Multiveicolo": "La nostra competenza non si ferma alle auto. Siamo attrezzati per la manutenzione di furgoni, motocicli e offriamo un servizio specializzato per il tuning e la revisione di sospensioni per Mountain Bike (MTB).",
   "Elettrauto": "Gestiamo tutta la parte elettrica del tuo veicolo: dalla sostituzione batteria, sensori di parcheggio e riparazione di alzacristalli o impianti di illuminazione LED/Xenon.",
-  "Componenti FRMRacing": "La nostra linea esclusiva, nata dalla pista e sviluppata per la strada. Progettiamo e realizziamo internamente componenti aftermarket di alta qualità — dai kit di potenziamento agli elementi ricavati dal pieno — specializzati nell'ottimizzazione della Suzuki Swift Sport ZC33S. Ogni pezzo è studiato per massimizzare prestazioni e affidabilità."
+  "Componenti FRMRacing": "La nostra linea esclusiva, nata dalla pista e sviluppata per la strada. Progettiamo e realizziamo internamente componenti aftermarket di alta qualità — dai kit di potenziamento agli elementi ricavati dal pieno — specializzati nell'ottimizzazione della Suzuki Swift Sport ZC33S. Ogni pezzo è studiato per massimizzare prestazioni e affidabilità.",
+"Gommista": `
+    <div style="text-align: left; width: 100%; background: #1a1a1a !important; display: flex; flex-direction: column; gap: 0 !important;">
+      
+      <div style="padding: 0 30px 15px 30px; margin: 0 !important; background: #1a1a1a !important; border: none !important; outline: none !important; box-shadow: none !important;">
+        <p style="font-size: 1.1rem; line-height: 1.3; color: #primary; margin: 0 !important;">
+          Attrezzatura professionale di precisione per la cura dei tuoi pneumatici.
+        </p>
+      </div>
+      
+      <div style="margin: 0 !important; padding: 0 !important; background: #1a1a1a !important; border: none !important; outline: none !important; box-shadow: none !important;">
+        <div style="width: 100%; height: 500px; background: #1a1a1a !important; display: flex; align-items: center; justify-content: center; margin: 0 !important; padding: 0 !important; border: none !important;">
+            <img src="img/Servizi/smontagomme.jpeg" alt="Smontagomme professionale" 
+                 style="max-width: 100%; max-height: 100%; object-fit: contain; display: block; border: none !important; outline: none !important; box-shadow: none !important; margin: 0 auto !important;">
+        </div>
+        <div style="padding: 20px 30px 25px 30px; background: #1a1a1a !important;">
+            <h4 style="color: #f1c40f; font-size: 1.4rem; margin: 0 0 5px 0; text-transform: uppercase;">Smontagomme Professionale</h4>
+            <p style="font-size: 1.1rem; opacity: 0.9; margin: 0; line-height: 1.4;">
+Smontagomme ad alte prestazioni, progettato per operare anche su
+            <strong>pneumatici Run Flat</strong> e a profilo ribassato.<br />
+            Supporta cerchi da 10 a 24 pollici. Riduce al minimo il graffio
+            del cerchione.            </p>
+        </div>
+      </div>
+
+      <div style="margin: 0 !important; padding: 0 !important; background: #1a1a1a !important; border: none !important;">
+        <div style="width: 100%; height: 500px; background: #1a1a1a !important; display: flex; align-items: center; justify-content: center; margin: 0 !important; padding: 0 !important;">
+            <img src="img/Servizi/bilanciamentogomme2.jpeg" alt="Bilanciatrice digitale" 
+                 style="max-width: 100%; max-height: 100%; object-fit: contain; display: block; border: none !important; outline: none !important; box-shadow: none !important; margin: 0 auto !important;">
+        </div>
+        <div style="padding: 20px 30px 25px 30px; background: #1a1a1a !important;">
+            <h4 style="color: #f1c40f; font-size: 1.4rem; margin: 0 0 5px 0; text-transform: uppercase;">Bilanciatrice Digitale</h4>
+            <p style="font-size: 1.1rem; opacity: 0.9; margin: 0; line-height: 1.4;">
+               Bilanciatrice elettronica di ultima generazione con
+            <strong>rilevamento automatico dei parametri</strong>. <br />
+            </p>
+        </div>
+      </div>
+    </div>
+  `
 };
 
 const modal = document.getElementById("info-modal");
