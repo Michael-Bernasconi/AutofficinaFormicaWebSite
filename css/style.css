@@ -869,7 +869,7 @@ footer {
 /* GESTIONE BOTTONI DENTRO IL MODAL */
 .modal-actions {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
