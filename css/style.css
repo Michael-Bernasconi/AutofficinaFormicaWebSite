@@ -124,7 +124,32 @@ header h1 {
   margin: 50px auto 50px;
   padding: 0 20px;
 }
+/* --- OTTIMIZZAZIONE CARD FRMRACING --- */
 
+/* --- OTTIMIZZAZIONE CARD FRMRACING (Solo Layout) --- */
+
+/* Mobile: la card si comporta esattamente come le altre */
+.servizi-home .servizio-card:last-child {
+    grid-column: span 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left;
+    width: 100%; /* Sicurezza per il mobile */
+}
+
+/* Tablet e PC: la card si espande su tutta la riga ma mantiene lo stile del testo */
+@media (min-width: 769px) {
+    .servizi-home .servizio-card:last-child {
+        grid-column: 1 / -1; /* Occupa tutta la larghezza della griglia */
+        align-items: center; /* Centra l'icona e il pulsante Scopri di più */
+        text-align: center;  /* Centra il testo */
+        padding: 40px 25px;  /* Un po' di respiro in più, ma senza esagerare */
+    }
+
+    /* Rimuoviamo o commentiamo eventuali modifiche al font-size qui dentro 
+       per lasciarlo uguale alle altre card */
+}
 .servizio-card {
   background: var(--primary);
   color: var(--white);
