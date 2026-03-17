@@ -598,44 +598,33 @@ footer {
   left: 0 !important;
   transform: none !important;
   display: grid !important;
-  /* Crea 2 colonne di larghezza uguale */
-  grid-template-columns: repeat(2, 1fr) !important; 
-  /* Crea 3 righe automatiche */
-  grid-template-rows: auto auto auto !important;
-  gap: 15px 20px !important; /* Spazio verticale e orizzontale */
+  
+  /* CREA 3 COLONNE UGUALI */
+  grid-template-columns: repeat(3, 1fr) !important; 
+  gap: 10px !important; /* Spazio tra i quadratini */
+  
   width: 100% !important;
-  max-width: 320px !important; /* Stringe il menu per centrarlo meglio */
+  max-width: 95%; /* Usa quasi tutta la larghezza dello schermo */
   margin: 15px auto !important;
   padding: 0 !important;
 }
-
 .nav-desktop a {
   color: var(--primary) !important;
-  font-size: 1rem !important;
+  font-size: 0.85rem !important; /* Leggermente più piccolo per farli stare in 3 */
   font-weight: 700 !important;
   text-transform: uppercase !important;
   text-align: center !important;
-  /* Rimuove eventuali bordi o effetti desktop che ingombrano */
   border: 1px solid rgba(241, 196, 15, 0.3) !important; 
-  padding: 8px 5px !important;
+  padding: 12px 5px !important; /* Più padding verticale per farli sembrare quadrati */
   border-radius: 5px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px; /* Altezza minima uniforme */
 }
-
-  /* POSIZIONAMENTO 2 SOPRA (Home e Servizi) */
-  /* Occupano 3 fette ciascuno (totale 6) */
-  .nav-desktop a:nth-child(1),
-  .nav-desktop a:nth-child(2) {
-    grid-column: span 3 !important;
-  }
-
-  /* POSIZIONAMENTO 3 SOTTO (FrmRacing, Gallery, Recensioni) */
-  /* Occupano 2 fette ciascuno (totale 6) */
-  .nav-desktop a:nth-child(3),
-  .nav-desktop a:nth-child(4),
-  .nav-desktop a:nth-child(5) {
-    grid-column: span 2 !important;
-    font-size: 0.9rem !important; /* Leggermente più piccoli per farli stare bene in tre */
-  }
+.nav-desktop a:nth-child(n) {
+  grid-column: span 1 !important;
+}
   /* Sistemiamo la Hero (l'immagine dell'auto) per non farla salire sopra */
   .hero {
     height: auto;
